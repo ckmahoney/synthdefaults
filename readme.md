@@ -9,7 +9,7 @@ So requesting any synth with amp `0.1` should return a signal whose overall ampl
 
 ## Usage
 
-First, clone `SynthDefaults.sc` to your supercolider class path. You can get your classpath by evaluating `Platform.userExtensionDir` or `Platform.classLibraryDir`. 
+First, clone this repository to your supercolider class path. You can get your classpath by evaluating `Platform.userExtensionDir` or `Platform.classLibraryDir`. 
 Clone this repo there, restart supercollider, and it should be auto loaded.
 
 To make these definitions available to your audio server, call `SynthDefaults.loadSynths`. It returns a Dictionary of (groupName: nSynths). 
