@@ -22,7 +22,7 @@ The synthdefs are grouped into some general musical categories, like "organ" or 
 To get the options Dictionary after it is loaded, use `SynthDefaults.opts`. 
 
 
-### SynthDefaults.choose(name)
+### SynthDefaults.choose(name: keyword)
 To pick one of these at random, use `SynthDefaults.choose`. It will return the **name of the synthdef**. 
 Example usage with a Pbind:
 ```
@@ -31,7 +31,7 @@ Pbind(\instrument, Pfunc { SynthDefaults.choose(\flute) }, \note, Pn(55) ).play(
 
 The result should be a random flute per note. 
 
-### SynthDefaults.get(name, n)
+### SynthDefaults.get(name: keyword, n?: integer)
 To select a synth more deterministically, use this getter. The "n" value will be modulus the number of available synths. 
 So you will always get the same synth per name/n combo. Unless you add more synths! Which would be cool (see below).
 
