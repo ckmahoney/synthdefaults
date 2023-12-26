@@ -1,31 +1,4 @@
 SynthDefaults {
-
-	//\\##//\\##  SynthonizedDefaults   //\\##//\\##//\\
-
-
-	/*
-	- A Collection of Tradicional SynthDefs-
-
-	Organized by Zé Craum
-
-	This is the first scratch, ASAP it will be avaible in a more organized form.
-
-	//Some Guidelines from uploading contributiong or helping organizing existing stuff:
-	1.Executing code should return a SynthDef;
-	2.The SynthDEFaults should have ControlSpecs for every parameter to define an acceptable range;
-	3.The SynthDEFaults should not depend on things outside of the core lib or sc3-plugins;
-	4.The SynthDEFaults should have reasonable defaults that allow it to make a representative sound with no arguments;
-	5. SynthDEFaults symbol should be always be like \Piano_BabyGrandPiano; \Guitar_FDBEletric...
-	6. SynthDEFaults must be written using NamedControl Style (Still being updated);
-	6.1. Additional arguments besides from amp/dur/pitch default events must be written as local variables and must have comments;
-	7. All the SynthDef should be designed for working with the main scope of Patterns
-
-	Examples at: http://sccode.org/1-5aE
-
-	//
-
-	*/
-
 	classvar <>loaded = false;
 
 	*kick_1 {
