@@ -12,11 +12,17 @@ So requesting any synth with amp `0.1` should return a signal whose overall ampl
 First, clone this repository to your supercolider class path. You can get your classpath by evaluating `Platform.userExtensionDir` or `Platform.classLibraryDir`. 
 Clone this repo there, restart supercollider, and it should be auto loaded.
 
+
+### SynthDefaults.loadSynths()
+
 To make these definitions available to your audio server, call `SynthDefaults.loadSynths`. It returns a Dictionary of (groupName: nSynths). 
+
+### SynthDefaults.opts()
+The synthdefs are grouped into some general musical categories, like "organ" or "piano" or "flute". 
 To get the options Dictionary after it is loaded, use `SynthDefaults.opts`. 
 
-The synthdefs are grouped into some general musical categories, like "organ" or "piano" or "flute". 
 
+### SynthDefaults.choose(name)
 To pick one of these at random, use `SynthDefaults.choose`. It will return the **name of the synthdef**. 
 Example usage with a Pbind:
 ```
@@ -24,6 +30,13 @@ Pbind(\instrument, Pfunc { SynthDefaults.choose(\flute) }, \note, Pn(55) ).play(
 ```
 
 The result should be a random flute per note. 
+
+### SynthDefaults.get(name, n)
+To select a synth more deterministically, use this getter. The "n" value will be modulus the number of available synths. 
+So you will always get the same synth per name/n combo. Unless you add more synths! Which would be cool (see below).
+
+### SynthDefaults.any()
+Gives you any registered synthdef name.
 
 ## About this 
 
