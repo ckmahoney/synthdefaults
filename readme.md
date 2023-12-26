@@ -25,3 +25,11 @@ Pbind(\instrument, Pfunc { SynthDefaults.choose(\flute) }, \note, Pn(55) ).play(
 
 The result should be a random flute per note. 
 
+## About this 
+
+synths are super cool.
+
+To be honest I haven't tested this outside of my own SuperCollider environment. 
+So if there is some quark or class missing in this code that isn't in your code, please open an issue or pull request to raise awareness.
+
+Also would be super cool if you wanted to open a pull request to like make the synths better.
