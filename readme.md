@@ -27,6 +27,8 @@ The result should be a random flute per note.
 
 ## About this 
 
+*no guarantees, FOSS, all that schnazz*
+
 synths are super cool.
 
 To be honest I haven't tested this outside of my own SuperCollider environment. 
